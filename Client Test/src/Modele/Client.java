@@ -4,8 +4,6 @@ package Modele;
 import java.rmi.*;
 import java.rmi.server.*;
 import java.util.Scanner;
-
-
 import java.net.URL;
 
 import javafx.application.Application;
@@ -20,23 +18,14 @@ import javafx.stage.Stage;
 
 
 import Modele.Pendu;
-import Modele.PenduInter;
 public class Client extends Application  {
 	
 	
 	
  public static void main(String[] argv) {
 	 
-  try {
-   int port = 8000;
-   PenduInter obj = (PenduInter) Naming.lookup("rmi://localhost:8000/Jeux");
-   Pendu P = obj.initPartie();
-   Scanner sc = new Scanner(System.in); 
    launch(argv);
  
-  } catch (Exception e) {
-   System.out.println("Client exception: " + e);
-  }
  }
 
 public void start(Stage arg0) throws Exception {

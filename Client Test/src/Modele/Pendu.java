@@ -4,13 +4,13 @@ import java.io.Serializable;
 public class Pendu implements Serializable {
 	int Chance;
 	String Mot;
-	String motEnvoye;
+	String MotEnvoye;
 	
 	public Pendu(int chance, String mot, String motEnvoye) {
 		super();
 		this.Chance = chance;
 		this.Mot = mot;
-		this.motEnvoye = motEnvoye;
+		this.MotEnvoye = motEnvoye;
 	}
 
 
@@ -30,12 +30,12 @@ public class Pendu implements Serializable {
 		Mot = mot;
 	}
 
-	public String getmotEnvoye() {
-		return motEnvoye;
+	public String getMotEnvoye() {
+		return MotEnvoye;
 	}
 
-	public void setmotEnvoye(String motEnvoye) {
-		this.motEnvoye = motEnvoye;
+	public void setMotEnvoye(String motEnvoye) {
+		MotEnvoye = motEnvoye;
 	}
 	
 	
