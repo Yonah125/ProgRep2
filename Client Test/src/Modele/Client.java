@@ -9,9 +9,9 @@ import java.net.URL;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
@@ -36,7 +36,6 @@ public void start(Stage arg0) throws Exception {
 			FXMLLoader fxmlLoader = new FXMLLoader(fxmlURL);
 			Node root = (Node) fxmlLoader.load();
 			Scene scene = new Scene((BorderPane) root, 600, 400);
-			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			arg0.setScene(scene);
 			arg0.setTitle("Accueil");
 			arg0.show();

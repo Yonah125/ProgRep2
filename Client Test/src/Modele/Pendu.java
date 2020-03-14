@@ -1,9 +1,16 @@
 package Modele;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
 public class Pendu implements Serializable {
 	int Chance;
 	String Mot;
+	List<Character> list = new ArrayList<Character>();
+
 	String MotEnvoye;
 	
 	public Pendu(int chance, String mot, String motEnvoye) {
@@ -17,6 +24,17 @@ public class Pendu implements Serializable {
 	public int getChance() {
 		return Chance;
 	}
+	
+	
+	public List<Character> getList() {
+		return list;
+	}
+
+
+	public void setList(List<Character> list) {
+		this.list = list;
+	}
+
 
 	public void setChance(int chance) {
 		Chance = chance;
